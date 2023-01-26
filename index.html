@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trivia</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/styles.css">
+    <script LANGUAJE="JavaScript">
+       </script>
+  </head>
+  <body id="boddy">
+    <h1 id="mensaje_bienvenida">BIENVENIDOS !!!</h1>
+    <h2 id= "mensaje_saludo">BIENVENIDO</h2>
+    <div id="container">
+   <img id= "Imagen1" src="https://cdn.jimook.com/i/ok-google-juguemos-trivia-crack.1592821323.jpg"></img>
+   
+   <br></br>
+   <button id="myButton" >Juega Ahora</button>
+    
+ 
+    <div id="pregunta1" style="display: none;">
+        
+      <h2 id="t1">TRIVIA DIVERTIDA</h2>
+
+      <section class="section1">
+          <h2 id= "t-restante" class="estadisticas">Tiempo: 5 segundos</h2>
+        </section>
+      <p id="p1">¿Se puede hacer retiros con papeletas de cuentas corrientes ?</p>
+      <fieldset>
+        <legend>Selecciona la respuesta correcta</legend>
+        <label>
+          <input   type="radio" name="cuentas" value="Si" id="Si1"/> SI
+        </label>
+        <label>
+          <input type="radio"name="cuentas" value="No" id="No1"/> NO
+        </label>
+        <label>
+          <input type="radio" name="cuentas" value="No se"id="Nose1"/> NO SE
+        </label>
+        <p id="respuesta1"></p>
+        <button id="comprobar1">Comprobar respuesta</button>
+        <button id="sig1" /> Siguiente </button>
+      </fieldset>
+    </div>
+    
+    <div id="pregunta2" style="display: none;">
+      <p id="p2">¿Cúal es el formato correcto de fecha en cheques?</p>
+      <fieldset>
+        <legend>Selecciona la respuesta correcta</legend>
+        <label>
+          <input type="radio" name="cheques" value="dd/mm/aa" id="dd/mm/aa1"/> dd/mm/aa
+        </label>
+        <label>
+          <input type="radio" name="cheques" value="aa/mm/dd" id="aa/mm/dd1"/> aa/mm/dd
+        </label>
+        <label>
+          <input type="radio" name="cheques"value="mm/aa/dd" id="mm/aa/dd1"/> mm/aa/dd
+        </label>
+        <p id="respuesta2"></p>
+        <button id="comprobar2">Comprobar respuesta</button>
+        <button id="sig2" /> Siguiente </button>
+       </fieldset>
+    </div>
+    <div id="pregunta3" style="display: none;">
+       <p id="p3">¿Cuál es el monto de endoso de un cheque?</p>
+        <fieldset>
+          <legend>Selecciona la respuesta correcta</legend>
+          <label>
+            <input type="radio" name="endoso" value="3000" id="30001" /> 3000
+          </label>
+          <label>
+            <input type="radio" name="endoso" value="2000" id="20001"/> 2000
+          </label>
+          <label>
+            <input type="radio" name="endoso" value="4000" id="40001" /> 4000
+          </label>
+          <p id="respuesta3"></p>
+          <button id="comprobar3">Comprobar respuesta</button>
+          <button id="sig3" /> Siguiente </button>
+        </fieldset>
+       <button id="enviar">Enviar respuesta</button>
+       <button onclick="location.reload()"/> Volver a jugar </button>
+
+      </div>
+    <p id="triviaDivertida" > </p>
+    
+   <script src="src/index.js"></script>
+  </body>
+  <footer> 
+    <p> Juego programado por Adri y Bri / Inspirar y retribuir confianza / </p>
+  </footer>
+</html>

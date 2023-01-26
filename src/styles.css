@@ -1,0 +1,96 @@
+:root {
+  --textoprincipal: "Anton", sans-serif;
+  --textobienvenida: "arial", sans-serif;
+  --azuloscuro: #34495e;
+  --rosa: hsl(351, 100%, 96%);
+  --celeste: #d6eaf8;
+  --blanco: #fdfefe;
+  --verde: #196f3d;
+  --negro: #17202a;
+  --tamaprincipal: 5rem;
+  --tamasecundario: 1.5rem;
+}
+
+body {
+  font-family: var(--textoprincipal);
+  font-weight: bolder;
+  text-align: center;
+  background-size: cover;
+}
+img.pequeña {
+  width: 50px;
+  height: 50px;
+}
+
+h1 {
+  padding: 10px;
+  text-align: center;
+  color: --azuloscuro;
+  padding-top: 100px;
+  font-size: var(--tamaprincipal);
+}
+#container {
+  padding: 10;
+  text-align: center;
+  color: rgb(17, 4, 53);
+}
+button {
+  background: --rosa;
+  color: rgb(0, 0, 0);
+  margin: 10px;
+  padding: 10px;
+  border: 50;
+}
+h2 {
+  font-family: var(--textobienvenida);
+  color: rgb(3, 9, 27);
+  font-size: 2.5rem;
+}
+h3 {
+  font-family: --textobienvenida;
+  color: rgb(11, 70, 235);
+  font-size: 1.5rem;
+}
+
+legend {
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  font-weight: bold;
+}
+
+script {
+  color: rgb(7, 7, 7);
+}
+#p1,
+#p2,
+#p3 {
+  font-size: var(--tamasecundario);
+  color: var(--negro);
+  font-weight: bolder;
+}
+#Gif {
+  width: 280px;
+  height: 280px;
+  display: block;
+  margin: auto;
+}
+#t1 {
+  font-size: var(--tamaprincipal);
+  background: linear-gradient(green, yellow);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.section1 {
+  background-color: var(--celeste);
+  width: 250px;
+  height: 400px;
+}
+
+#pregunta1,
+#pregunta2,
+#pregunta3,
+#mensaje_saludo,
+#Gif,
+#money {
+  display: none;
+}
