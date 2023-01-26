@@ -157,12 +157,14 @@ function seleccionoRespuesta() {
 }
 function mostrarpregunta2() {
   document.getElementById("pregunta2").style.display = "block";
+  document.getElementById("pregunta1").style.display = "none";
 }
 function mostrarpregunta3() {
   document.getElementById("pregunta3").style.display = "block";
+  document.getElementById("pregunta2").style.display = "none";
 }
 function contartiempo() {
-  var timer = 60;
+  var timer = 5;
   var intervalo = setInterval(function () {
     timer--;
     if (timer <= 0) {
@@ -188,6 +190,7 @@ function juegaAhora() {
 
   // Mostrar form
   contartiempo();
+  document.getElementById("triviaDivertida").style.display = "block";
   document.getElementById("pregunta1").style.display = "block";
   //document.getElementById("pregunta2").style.display = "block";
   //document.getElementById("pregunta3").style.display = "block";//
