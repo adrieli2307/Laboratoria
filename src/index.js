@@ -49,21 +49,19 @@ function mostrarpregunta3() {
   document.getElementById("pregunta3").style.display = "block";
 }
 
-let timer = 10;
-
 function contartiempo() {
-  setInterval(() => {
+  let timer = 60;
+  let intervalo = setInterval(() => {
     timer--;
+    if (timer <= 0) {
+      clearInterval(intervalo);
+      enviar();
+      location.reload();
+    }
     document.getElementById(
       "t-restante"
     ).innerHTML = `Tiempo: ${timer} segundos`;
   }, 1000);
-}
-
-let temporizador = false;
-if (temporizador === false) {
-  contartiempo();
-  temporizador = true;
 }
 
 function juegaAhora() {
@@ -81,7 +79,8 @@ function juegaAhora() {
   document.getElementById("Imagen1").style.display = "none";
 
   // Mostrar form
-  document.getElementById("t-restante");
+  contartiempo();
+
   document.getElementById("pregunta1").style.display = "block";
   //document.getElementById("pregunta2").style.display = "block";
   //document.getElementById("pregunta3").style.display = "block";//
