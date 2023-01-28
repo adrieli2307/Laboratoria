@@ -138,7 +138,7 @@ function enviar() {
 // COMPROBAR LAS RESPUESTAS
 function comprobar1() {
   document.getElementById("sig1").style.display = "inline";
-  document.getElementById("respuesta1").innerHTML = " La respuesta correcta es :NO";
+  document.getElementById("respuesta1").innerHTML = " La respuesta correcta es :No";
   document.getElementById("Afirmativa1").disabled = true;
   document.getElementById("Negativa1").disabled = true;
   document.getElementById("Dudativa1").disabled = true;
@@ -185,7 +185,7 @@ function contartiempo() {
 function juegaAhora() {
   var nombre = prompt("Ingresa tu nombre");
   if (nombre == "") {
-    alert(" Debes ingrsar tu nombre");
+    alert(" Debes ingresar tu nombre");
     return;
   }
 
